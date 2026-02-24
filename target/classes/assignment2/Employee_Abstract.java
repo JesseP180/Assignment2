@@ -3,7 +3,7 @@ public abstract class Employee_Abstract extends Person {
     private double salary;
 
     public Employee_Abstract(int id, String name, String phone, String employeeId, double salary) {
-        super(id, name, phone);  // calling parent constructor
+        super(id, name, phone);  
         this.employeeId = employeeId;
         this.salary = salary;
     }
