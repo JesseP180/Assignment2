@@ -1,6 +1,3 @@
-import java.time.LocalDate;
-import java.time.format.DateTimeParseException;
-import java.util.*;
 
 public class Main {
     private static List<Medicine> medicines = new ArrayList<>();
