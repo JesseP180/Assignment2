@@ -1,4 +1,4 @@
-public interface Sellable_Interface {
+public interface Sellable {
     double calculateTotalPrice(int quantity);
     double applyDiscount(double percentage);
 }

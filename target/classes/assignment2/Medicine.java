@@ -1,7 +1,8 @@
 import java.time.LocalDate;
 
-public class Medicine_Concrete implements Sellable, Expirable {
+public class Medicine implements Sellable, Expirable {
     private String name;
+    private String Medicine;
     private double price;
     private int stock;
     private LocalDate expiryDate;
@@ -18,12 +19,11 @@ public class Medicine_Concrete implements Sellable, Expirable {
     public int getStock() { return stock; }
     public LocalDate getExpiryDate() { return expiryDate; }
 
-    public void reduceStock(int quantity) {
-        if (quantity <= stock) {
-            stock -= quantity;
-        } else {
-            System.out.println("Not enough stock!");
+        public void reduceStock(int quantity) throws InsufficientStockException {
+        if (quantity > stock) {
+            throw new InsufficientStockException("Only " + stock + " units of " + name + " available, but " + quantity + " requested.");
         }
+        stock -= quantity;
     }
 
     @Override

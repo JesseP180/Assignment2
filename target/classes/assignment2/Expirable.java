@@ -1,5 +1,5 @@
 import java.time.LocalDate;
 
-public interface Expirable_Interface {
+public interface Expirable {
     boolean isExpired();
 }

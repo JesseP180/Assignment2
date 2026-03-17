@@ -1,7 +1,7 @@
-public class Pharmacist_Concrete extends Employee {
+public class Pharmacist extends Employee {
     private String licenseNumber;
 
-    public Pharmacist_Concrete(int id, String name, String phone, String employeeId, double salary, String licenseNumber) {
+    public Pharmacist(int id, String name, String phone, String employeeId, double salary, String licenseNumber) {
         super(id, name, phone, employeeId, salary);
         this.licenseNumber = licenseNumber;   // using 'this'
     }

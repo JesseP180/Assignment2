@@ -1,9 +1,9 @@
-public abstract class Person_Abstract {
+public abstract class Person {
     private String name;
     private String phone;
     private int id;
 
-    public Person_Abstract(int id, String name, String phone) {
+    public Person(int id, String name, String phone) {
         this.id = id;
         this.name = name;
         this.phone = phone;
