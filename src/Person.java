@@ -1,3 +1,5 @@
+package assignment2;
+
 public abstract class Person {
     private String name;
     private String phone;

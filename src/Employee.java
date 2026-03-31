@@ -1,9 +1,11 @@
+package assignment2;
+
 public abstract class Employee extends Person {
     private String employeeId;
     private double salary;
 
     public Employee(int id, String name, String phone, String employeeId, double salary) {
-        super(id, name, phone);  
+        super(id, name, phone);
         this.employeeId = employeeId;
         this.salary = salary;
     }

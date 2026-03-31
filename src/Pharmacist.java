@@ -1,9 +1,11 @@
+package assignment2;
+
 public class Pharmacist extends Employee {
     private String licenseNumber;
 
     public Pharmacist(int id, String name, String phone, String employeeId, double salary, String licenseNumber) {
         super(id, name, phone, employeeId, salary);
-        this.licenseNumber = licenseNumber;   // using 'this'
+        this.licenseNumber = licenseNumber;
     }
 
     public String getLicenseNumber() { return licenseNumber; }
@@ -14,7 +16,7 @@ public class Pharmacist extends Employee {
 
     @Override
     public void displayInfo() {
-        super.displayInfo();  
+        super.displayInfo();
         System.out.println("License: " + licenseNumber + " (Pharmacist)");
     }
 }
